@@ -1,0 +1,11 @@
+@mixin button {
+    margin: auto;
+    background-color: $color-secondary;
+    color: $color-white;
+    line-height: 80px;
+    padding: 26px 91px;
+    font-weight: $font-weight_h1_h4;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: $font-size-h4;
+}

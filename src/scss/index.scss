@@ -1,0 +1,44 @@
+@import "./_variables.scss";
+@import "./_fonts.scss";
+@import "./_mixins.scss";
+// @import "./header.scss";
+@import "./features.scss";
+@import "./work.scss";
+@import "./team.scss";
+@import "./download.scss";
+@import "./footer.scss";
+
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+
+    @media (max-width: 1024px) {
+        font-size: 12px;
+    }
+}
+
+.container {
+    position: relative;
+    z-index: 3;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (max-width: 1024px) {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    @media (max-width: 320px) {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}

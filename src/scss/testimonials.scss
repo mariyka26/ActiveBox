@@ -1,0 +1,138 @@
+.swiper_container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper_content {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 525px) {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.swiper-slide {
+    @media (max-width: 525px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+.swiper_img {
+    width: 50%;
+    aspect-ratio: 1/0.66;
+    overflow: hidden;
+
+
+
+
+    @media (max-width: 565px) {
+        aspect-ratio: 1/0.8;
+    }
+
+    @media (max-width: 525px) {
+        width: 100%;
+        aspect-ratio: 1/0.7;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.swiper-wrapper {
+    position: relative;
+}
+
+.swiper_descripton {
+    position: absolute;
+    transform: translate(100%, 0);
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    background-color: #5c3249;
+    padding: 7% 9%;
+
+
+    @media (max-width: 671px) {
+        padding: 5% 6%;
+    }
+
+    @media (max-width: 525px) {
+        width: 100%;
+        height: 50%;
+        transform: translate(0, 150%);
+    }
+
+    .swiper_big_descripton {
+        margin-bottom: 30px;
+        font-family: "Cardo";
+        font-size: $font-size-h2;
+        font-weight: $font-weight_h5;
+        color: $color-white;
+        font-style: italic;
+        text-transform: capitalize;
+
+        @media (max-width: 1340px) {
+            font-size: $font-size-h3;
+        }
+
+        @media (max-width: 1116px) {
+            font-size: $font-size-h4;
+        }
+
+        @media (max-width: 671px) {
+            margin-bottom: 15px;
+        }
+
+
+        @media (max-width: 320px) {
+            font-size: $font-size-h2;
+        }
+    }
+
+    .swiper_small_descripton {
+        color: $color-white;
+        font-size: $font-size-h6;
+        font-weight: $font-weight_h2_h3_h6;
+        text-transform: uppercase;
+
+
+    }
+}
+
+.swiper-pagination {
+    position: relative;
+    margin-top: 30px;
+    bottom: 0;
+}
+
+.swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid rgba(126, 93, 111, 1);
+    background-color: white;
+    opacity: 1;
+
+    @media (max-width: 1024px) {
+        width: 9.5px;
+        height: 9.5px;
+    }
+
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgba(126, 93, 111, 1);
+}

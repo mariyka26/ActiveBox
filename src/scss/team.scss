@@ -1,6 +1,10 @@
 .team {
     padding: 115px 0 100px;
     background: $color-white;
+
+    @media (max-width: 1024px) {
+        padding: 78px 0;
+    }
 }
 
 .team_wrapper {
@@ -11,9 +15,19 @@
     @media (max-width: 1024px) {
         margin: 0 -12.5px;
     }
+
+    @media (max-width: 525px) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
 }
 
 .team_card {
+    display: flex;
+    flex-direction: column;
     margin: 0 15px;
     width: 270px;
 
@@ -22,7 +36,7 @@
         margin: 0 12.5px;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 525px) {
         width: 280px;
     }
 }
@@ -34,6 +48,13 @@
     aspect-ratio: 1/1;
     width: 100%;
 
+    @media (max-width: 1024px) {
+        margin-bottom: 25px;
+    }
+
+    @media (max-width: 505px) {
+        aspect-ratio: 1/0.8;
+    }
 
     img {
         width: 100%;
@@ -45,15 +66,7 @@
         left: 0;
     }
 
-    @media (max-width: 1024px) {
-        width: 227px;
-        height: 227px;
-    }
 
-    @media (max-width: 320px) {
-        width: 280px;
-        height: 227px;
-    }
 }
 
 .team_card_title {
@@ -64,17 +77,21 @@
     text-align: left;
 }
 
-.team_card_subtitle p {
-    font-weight: $font-weight_h5;
-    color: $color-secondary;
-    margin-bottom: 20px;
-    font-size: $font-size-h5;
-    text-transform: uppercase;
-    text-align: left;
+.team_card_subtitle {
+
+    p {
+        font-weight: $font-weight_h5;
+        color: $color-secondary;
+        margin-bottom: 20px;
+        font-size: $font-size-h5;
+        text-transform: uppercase;
+        text-align: left;
+    }
 }
 
 .team_card_desc {
     margin-bottom: 38px;
+    flex-grow: 1;
 
     p {
         margin-bottom: 15px;
@@ -91,15 +108,38 @@
 .social-icons {
     margin-bottom: 15px;
 
+    @media (max-width: 525px) {
+        margin-bottom: 50px;
+    }
+
     ul {
         display: flex;
         width: 128px;
         justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 1024px) {
+            width: 107.65px;
+        }
+
+        @media (max-width: 525px) {
+            width: 128px;
+        }
+
+
 
         li {
             width: 39px;
             text-align: center;
             border: 1px solid $color-icons;
+
+            @media (max-width: 1024px) {
+                width: 32.8px;
+            }
+
+            @media (max-width: 525px) {
+                width: 40px;
+            }
 
             a {
 
@@ -110,6 +150,15 @@
                     color: $color-icons;
                     line-height: 39px;
                     text-align: left;
+
+                    @media (max-width: 1024px) {
+                        line-height: 32.8px;
+                    }
+
+                    @media (max-width: 525px) {
+                        line-height: 40px;
+                        font-size: $font-size-h3;
+                    }
                 }
             }
         }

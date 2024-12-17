@@ -9,6 +9,11 @@
     grid-template-rows: repeat(2, minmax(1fr, auto));
     margin: 0 -15px;
     grid-auto-rows: auto;
+
+    @media (max-width: 505px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, minmax(1fr, auto));
+    }
 }
 
 .features_card {

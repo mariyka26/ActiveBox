@@ -8,4 +8,33 @@
     transition: 0.3s;
     text-transform: uppercase;
     font-size: $font-size-h4;
+    animation: beat 0.6s infinite;
+
+
+    @media (max-width: 1024px) {
+        padding: 26px 63px;
+    }
+
+    &:hover {
+        background-color: rgba(231, 20, 20, 1);
+    }
+
+    &:active {
+        box-shadow: 4px 4px 30px 0 rgba(255, 67, 67, 1);
+        background-color: $color-secondary;
+    }
+}
+
+@keyframes beat {
+
+    0%,
+    100% {
+        transform: scale(1);
+        /* Начальный и конечный размер */
+    }
+
+    50% {
+        transform: scale(1.2);
+        /* Увеличение размера */
+    }
 }

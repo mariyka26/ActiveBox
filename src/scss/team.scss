@@ -1,9 +1,14 @@
 .team {
     padding: 115px 0 100px;
     background: $color-white;
+    z-index: 1;
 
     @media (max-width: 1024px) {
         padding: 78px 0;
+    }
+
+    @media (max-width: 525px) {
+        padding: 35px 0 40px;
     }
 }
 
@@ -20,9 +25,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-
     }
-
 }
 
 .team_card {
@@ -38,6 +41,11 @@
 
     @media (max-width: 525px) {
         width: 280px;
+        margin-bottom: 49px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -65,8 +73,6 @@
         top: 0;
         left: 0;
     }
-
-
 }
 
 .team_card_title {
@@ -78,7 +84,6 @@
 }
 
 .team_card_subtitle {
-
     p {
         font-weight: $font-weight_h5;
         color: $color-secondary;
@@ -108,10 +113,6 @@
 .social-icons {
     margin-bottom: 15px;
 
-    @media (max-width: 525px) {
-        margin-bottom: 50px;
-    }
-
     ul {
         display: flex;
         width: 128px;
@@ -125,8 +126,6 @@
         @media (max-width: 525px) {
             width: 128px;
         }
-
-
 
         li {
             width: 39px;

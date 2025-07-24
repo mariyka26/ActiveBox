@@ -1,3 +1,6 @@
+@use "./_variables.scss" as *;
+@use "./_mixins.scss" as *;
+
 .features {
     background: $color-white;
     padding: 116px 0;

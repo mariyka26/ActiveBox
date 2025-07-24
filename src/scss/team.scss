@@ -1,3 +1,6 @@
+@use "./_variables.scss" as *;
+@use "./_mixins.scss" as *;
+
 .team {
     padding: 115px 0 100px;
     background: $color-white;

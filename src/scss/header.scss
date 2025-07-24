@@ -1,3 +1,6 @@
+@use "./_variables.scss" as *;
+@use "./_mixins.scss" as *;
+
 header {
     background-image: url(../img/header/header_backgraund1.png);
     background-size: cover;
@@ -330,12 +333,15 @@ h1 {
 
 .header_button {
     @include button;
-    animation-name: heartBeat;
-    animation-duration: 1.6s;
-    animation-timing-function: ease;
-    animation-iteration-count: 3;
-    display: inline-block;
-    padding: 0 91px;
+
+    & {
+        animation-name: heartBeat;
+        animation-duration: 1.6s;
+        animation-timing-function: ease;
+        animation-iteration-count: 3;
+        display: inline-block;
+        padding: 0 91px;
+    }
 
     @media (max-width: 1024px) {
         display: inline;

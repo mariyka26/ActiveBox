@@ -1,3 +1,6 @@
+@use "./_variables.scss" as *;
+@use "./_mixins.scss" as *;
+
 footer {
     background: linear-gradient(#353c65 75%, #2c3154 25%);
     padding: 70px 0 25px;
@@ -27,7 +30,7 @@ footer {
 .footer_about {
     display: flex;
     flex-direction: column;
-    max-width: 370px;
+    width: 370px;
 
     @media (max-width: 500px) {
         margin-bottom: 70px;

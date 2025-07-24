@@ -1,3 +1,6 @@
+@use "./_variables.scss" as *;
+@use "./_mixins.scss" as *;
+
 .download {
     padding: 120px 0 114px;
     background: $color-white;

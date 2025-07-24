@@ -6,9 +6,8 @@
   "homepage": "https://mariyka26.github.io/ActiveBox/",
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build",
-    "predeploy": "parcel build",
-    "deploy": "gh-pages --dir=dist"
+    "build": "parcel build --public-url ./",
+    "deploy": "npm run build; if ($?) { gh-pages -d dist }"
   },
   "author": "",
   "license": "ISC",

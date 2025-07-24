@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "source": "src/index.html",
   "description": "",
-  "homepage": "https://mariyka26.github.io/ActiveBox/",
+  "homepage": "https://mariyka26.github.io/course_project/",
   "scripts": {
     "dev": "parcel",
     "build": "parcel build",
